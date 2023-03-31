@@ -1,38 +1,153 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-height: 99vh;
+  height: max-content;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.side-bar{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start ;
+  width: fit-content;
+  background-color: rgb(146, 146, 148);
+  border: 1px solid wheat;
+  min-height: 99vh;
+  height: max-content;
+}
+.side-bar-btn{
+  margin: 5px;
+  background-color: rgb(146, 146, 148);
+  border: none;
+}
+.main-content{
+  width: fit-content;
+  min-height: 99vh;
+  height: max-content;
+  background-color: rgb(224, 189, 123);  
+  border: 1px solid white;
+}
+.child-name{
+  display: flex;
+  flex-direction: column;
+  opacity: 0.3;
+  font-weight: bolder;
+  font-size: 0.6rem;
+  justify-content: flex-start;
+  margin: 5px;
+}
+.comp-child{
+  background-color: aliceblue;
+  margin: 5px;
+}
+.child-btn{
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  margin: 10px;
+  gap: 2rem;
+  border: none;
+}
+
+.search-bar{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  margin-left: 50px;
+  height: 0.5rem;
+  width: 40rem;
 }
 
-.App-link {
-  color: #61dafb;
+.base{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
+  min-height: 99vh;
+  margin-left: 1vh;
+  background-color: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard-Page{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 500px;
+  height: max-content;
+  border-radius: 10px;
+  margin-left: 13rem;
+  margin-top: 5rem;
+}
+
+
+.card-component{
+  border-left:10px solid; 
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  margin:2px;
+  padding:2px;
+  border-radius: 5px;
+  row-gap: 2rem;
+  text-align: left;
+}
+
+.Utilities-Page, .nopage, .blankpage, .btn-page{
+  margin-top: 15vh;
+  margin-left: 20vh;
+  height: 70vh;
+  width: 75vh;
+}
+.btns{
+  display: flex;
+  width: fit-content;
+  gap: 1rem;
+}
+.btns-large{
+  margin: 5px;
+  height: 60px;
+  width: 60px;
+  border:1px solid black;
+  border-radius: 30px;
+  font-size:xx-large;
+}
+.btns-small{
+  margin: 5px;
+  height: 30px;
+  width: 30px;
+  border:1px solid black;
+  border-radius: 30px;
+  font-size:xx-large;
+}
+
+.btns-regular{
+  margin: 5px;
+  height: 40px;
+  width: 40px;
+  border:1px solid black;
+  border-radius: 40px;
+  font-size:xx-large;
+}
+.color-element{
+  width:460px;
+  border:1px solid black;
+  border-radius:15px;
+  margin: 10px;
+  padding:10px;
+  color:white;
+  font-weight: bold;
+}
+
+.border-element{
+  width:460px;
+  border-left:5px solid;
+  border-top:5px solid;
+  border-right:5px solid;
+  border-bottom:5px solid;
+  margin :10px;
+  padding:10px; 
+  border-radius: 5px;
 }
